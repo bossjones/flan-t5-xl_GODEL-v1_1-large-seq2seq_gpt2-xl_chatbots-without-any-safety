@@ -1,3 +1,17 @@
+# Installation
+
+Symlink one of the yaml files from environments-and-requirements to environment.yml, then install your conda virtualenv.
+
+eg. for silicon m1 apple 
+
+`make link-conda-env`
+
+`make conda-update`
+
+`conda activate flan-t5-xl3`
+
+---------------------
+
 The purpose of this repository is to check the answers of Flan T5 and GODEL 1.1 from Google and GPT-2 from OpenAI without any input or output filters.
 
 As you can see, Flan T5 is the undisputed winner in this competition.
