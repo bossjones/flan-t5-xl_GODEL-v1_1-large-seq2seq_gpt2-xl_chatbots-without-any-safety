@@ -25,11 +25,17 @@ Symlink one of the yaml files from environments-and-requirements to environment.
 
 eg. for silicon m1 apple 
 
-`make link-conda-env`
+```
+make link-conda-env
 
-`make conda-update`
+make conda-update
 
-`conda activate flan-t5-xl3`
+conda activate flan-t5-xl3
+
+# https://huggingface.co/docs/accelerate/basic_tutorials/install
+
+accelerate config
+```
 
 ---------------------
 

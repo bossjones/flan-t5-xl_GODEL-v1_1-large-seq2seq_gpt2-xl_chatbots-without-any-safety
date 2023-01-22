@@ -27,6 +27,8 @@ dependencies:
   - scikit-image
   - scikit-learn
   - apple::tensorflow-deps
+  - sentencepiece
+  - accelerate
   - pip:
       - tqdm
       - better_exceptions
