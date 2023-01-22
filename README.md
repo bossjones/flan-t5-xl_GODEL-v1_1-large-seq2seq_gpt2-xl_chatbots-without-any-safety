@@ -37,6 +37,11 @@ conda activate flan-t5-xl3
 accelerate config
 ```
 
+# Further reading
+
+- https://huggingface.co/docs/transformers/model_doc/flan-t5
+- https://huggingface.co/docs/transformers/model_doc/t5
+- https://huggingface.co/google/flan-t5-base
 ---------------------
 
 The purpose of this repository is to check the answers of Flan T5 and GODEL 1.1 from Google and GPT-2 from OpenAI without any input or output filters.
