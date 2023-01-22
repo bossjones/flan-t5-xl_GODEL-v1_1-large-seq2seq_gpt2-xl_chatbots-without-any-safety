@@ -6,6 +6,7 @@ import tensorflow as tf
 import warnings
 import rich
 from rich.prompt import Prompt
+import errno
 
 warnings.filterwarnings(
     "ignore", category=UserWarning, module="transformers.generation_utils"
@@ -14,10 +15,24 @@ warnings.filterwarnings("ignore", category=UserWarning, module="requests")
 
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
+
+def mkdir_p(path):
+    try:
+        os.makedirs(path)
+    except OSError as exc:
+        if exc.errno == errno.EEXIST and os.path.isdir(path):
+            pass
+        else:
+            raise
+
+
+mkdir_p("./weights")
+
 tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-xl")
 model = T5ForConditionalGeneration.from_pretrained(
-    "google/flan-t5-xl", device_map="auto"
+    "google/flan-t5-xl", device_map="auto", offload_folder="./weights"
 )
+
 
 if os.name == "nt":
     os.system("cls")
