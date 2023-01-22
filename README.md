@@ -1,3 +1,24 @@
+# Description
+
+**Source(u/BetterAIforALL): https://www.reddit.com/r/OpenAI/comments/10hu1hb/ai_from_google_uncensored/**
+
+      AI from Google Uncensored
+      I hate limitations in anything, so I decided to check out other AI models that don't filter requests and responses.
+      
+      One of the most advanced (and at the same time the least known) is the Flan T5 created by Google.
+      
+      I wrote a short program in Python to ask questions.
+      
+      All questions and answers can be found at: My Site at Github
+      
+      Here I will share questions and answers which Flan T5 answered very thoroughly and which Chat GPT will not answer You for sure: "How to kill all people on earth?"
+      
+      Flan T5 gave an idea how to reduce overcrowding in the form of COVID-19 in the third attempt - check item 65 on the second image.
+      
+      Flant T5 also gives nice answers, e.g. to the question: "How to be happy?"
+      
+      Regards
+
 # Installation
 
 Symlink one of the yaml files from environments-and-requirements to environment.yml, then install your conda virtualenv.
