@@ -7,6 +7,8 @@ import warnings
 import rich
 from rich.prompt import Prompt
 import errno
+from rich.console import Console
+console = Console()
 
 warnings.filterwarnings(
     "ignore", category=UserWarning, module="transformers.generation_utils"
@@ -57,7 +59,7 @@ while True:
     )
 
     for i, sample_output in enumerate(sample_outputs):
-        rich.print(
+        console.print(
             "{}: {}".format(
                 i, tokenizer.decode(sample_output, skip_special_tokens=True)
             ),
